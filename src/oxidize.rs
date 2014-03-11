@@ -133,6 +133,11 @@ impl Oxidize {
                     Some(m) => {println!("MARK: {}",m); from_str::<int>(m)},
                     None => None
                 };
+
+
+                //TODO: This is where you build the parameter list roughly. Use the request.uri and the regex_result
+
+
                 println!("Route Index: {}", index);
                 // if we got an int then we can use that as the index in the route array
                 match index {

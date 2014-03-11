@@ -68,3 +68,14 @@ fn main() {
     let server = Oxidize::new(8000, "localhost", routes);
     server.serve();
 }
+
+
+
+//The following line is compiler option.
+#[deriving(Encodable)]
+struct JsonResponse {
+    message: &str
+}
+
+
+JsonResponse{message: "Hello, World!"}.encode()
